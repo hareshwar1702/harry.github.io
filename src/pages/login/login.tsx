@@ -9,11 +9,6 @@ const Login: React.FC = () => {
 
   return (
     <IonPage>
-      {/* <IonHeader>
-        <IonToolbar>
-          <IonTitle>Login</IonTitle>
-        </IonToolbar>
-      </IonHeader> */}
       <IonContent fullscreen>
         <IonGrid className='login-bg-img ion-padding-horizontal'>
             <IonRow>
