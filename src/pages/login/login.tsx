@@ -73,16 +73,15 @@ const Login: React.FC = () => {
                       </IonCol>
                       <IonCol sizeXl='8' sizeLg='7' sizeMd='7' sizeSm='7' sizeXs='ion-hide' className='ion-hide-md-down'>
                           <IonRow>
-                                    <IonCol class='ion-text-right'>
-                                    <img src="assets/images/yan_logo.png" />
-                                    </IonCol>
+                              <IonCol class='ion-text-right'>
+                                  <img src="assets/images/yan_logo.png" />
+                              </IonCol>
                           </IonRow>
                           <IonRow>
                               <IonCol>
-
                               </IonCol>
                           </IonRow>
-                      </IonCol>
+                      </IonCol> 
             </IonRow>
         </IonGrid>
       </IonContent>
