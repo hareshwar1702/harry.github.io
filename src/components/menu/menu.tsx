@@ -47,7 +47,7 @@ import {
     {
       title: 'Device Management',
       subtitle: 'Devices',
-      url: '/page/Archived',
+      url: '/device',
       iosIcon: diamondOutline,
       mdIcon: diamondSharp
     }

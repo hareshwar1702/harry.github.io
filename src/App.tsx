@@ -26,6 +26,7 @@ import Dashboard from './pages/dashboard/dashboard';
 import Menu from './components/menu/menu';
 import User from './pages/user/user';
 import './App.css';
+import Device from './pages/device/device';
 setupIonicReact();
 
 const App: React.FC = () =>{
@@ -46,6 +47,7 @@ return (
           <Route exact path="/home" component={Home} />
           <Route exact path="/dashboard" component={Dashboard} />
           <Route exact path="/user" component={User} />
+          <Route exact path="/device" component={Device} />
         </IonRouterOutlet>
       </IonSplitPane>
     </IonReactRouter>

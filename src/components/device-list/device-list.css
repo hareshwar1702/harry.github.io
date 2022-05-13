@@ -1,0 +1,51 @@
+ion-list.device-list{
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    padding: 0;
+    height: 70vh;
+}
+ion-list.device-list ion-list-header{
+    background: #c1c1c1;
+    min-height: 55px;
+    font-weight: 600;
+    font-size: 110%;
+}
+ion-list.device-list ion-item{
+    --padding-start: 0;
+    --inner-padding-start: 16px;
+}
+/* ion-list.device-list ion-list-header ion-label:nth-child(1),ion-list.user-list ion-item ion-label:nth-child(1){
+    max-width: 20%;
+}
+ion-list.device-list ion-list-header ion-label,ion-list.user-list ion-item ion-label{
+    max-width: 20%;
+} */
+
+/* form css */
+.add-form ion-item{
+    /* border: 1px solid #b6b6b6; */
+    overflow: initial;
+    margin-bottom: 35px;
+    /* margin-top: 10px; */
+}
+.add-form ion-item ion-label{
+    top: -21px;
+    position: absolute;
+    background: white;
+    font-size: 120% !important;
+}
+.add-form ion-item::part(native){
+    --border-width: 3px;
+}
+.add-profile ion-avatar{
+    width: 150px;
+    height: 150px;
+    margin-left: 4vw;
+}
+.add-profile ion-item{
+    text-align: center;
+}
+
+.plt-iphone .add-profile ion-avatar{
+    margin-left: 12vw;
+}

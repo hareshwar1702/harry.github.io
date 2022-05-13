@@ -4,3 +4,45 @@
 .m-auto{
     margin: auto;
 }
+
+ /* category-form css */
+ .add-category .add-category-form ion-item{
+    /* border: 1px solid #b6b6b6; */
+    overflow: initial;
+    margin-bottom: 35px;
+    /* margin-top: 10px; */
+}
+.add-category .add-category-form ion-item.ios{
+        margin-top: 10px;
+}
+.add-category .add-category-form ion-item ion-label{
+    top: -21px;
+    position: absolute;
+    background: white;
+    font-size: 120% !important;
+}
+.add-category .add-category-form ion-item::part(native){
+    --border-width: 3px;
+}
+.plt-desktop .add-category ,.plt-tablet .add-category{
+    --width: 528px;
+    --height: 420px;
+}
+.plt-ipad .add-category.ios{
+    --height: 443px;
+}
+
+ion-modal ion-header ion-toolbar{
+    --background: #c1c1c1;
+}
+ion-modal ion-header ion-toolbar ion-title{
+    text-align: center;
+}
+ion-modal ion-header ion-toolbar ion-button ion-icon{
+    font-size: 230%;
+    color: dimgrey;
+}
+ion-modal ion-header ion-toolbar.ios{
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+}

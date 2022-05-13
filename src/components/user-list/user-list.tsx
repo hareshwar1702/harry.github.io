@@ -1,6 +1,6 @@
 import { IonContent, IonGrid, IonRow, IonCol, IonSearchbar, IonButton, IonList, 
     IonListHeader, IonLabel, IonItem, IonBadge, IonInput, 
-    useIonLoading, IonImg, IonAvatar } from '@ionic/react';
+    useIonLoading, IonImg, IonAvatar, IonModal } from '@ionic/react';
 import './user-list.css';
 import React, { useState } from 'react';
 // interface ContainerProps { }
@@ -10,21 +10,6 @@ const UserList: React.FC = () => {
     const [present, dismiss] = useIonLoading();
     const [isShown, setIsShown] = useState(false);
     const [isAddform, showAddform] = useState(false);
-    // let isAddform:boolean = false;
-    // const showAddform = () => {
-    //     present({
-    //         message: 'Loading...',
-    //         duration: 1500
-    //     })
-    //     isAddform = true;
-    // }
-    // const showUserlist = () =>{
-    //     present({
-    //         message: 'Loading...',
-    //         duration: 1500
-    //     })
-    //     isAddform = false;
-    // }
   return (
     <IonContent fullscreen>
     <IonGrid>
@@ -113,8 +98,6 @@ const UserList: React.FC = () => {
                               <IonButton className='bg-grey ion-float-right' onClick={() => showAddform(false)}>Cancel</IonButton>
                           </IonCol>
                       </IonRow></>}
-
-
     </IonGrid>
 </IonContent>
   );
