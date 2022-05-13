@@ -1,8 +1,6 @@
 import {
     IonContent, IonGrid, IonRow, IonCol, IonSearchbar, IonButton, IonList,
-    IonListHeader, IonLabel, IonItem, IonBadge, IonInput,
-    useIonLoading, IonImg, IonAvatar, IonModal
-} from '@ionic/react';
+    IonListHeader, IonLabel, IonItem, IonBadge} from '@ionic/react';
 import {  useIonModal } from '@ionic/react';
 import './device-list.css';
 import React, { useState } from 'react';

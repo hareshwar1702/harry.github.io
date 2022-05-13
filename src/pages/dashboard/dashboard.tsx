@@ -1,6 +1,5 @@
-import { IonButton, IonButtons, IonContent, IonHeader, IonIcon, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButton, IonButtons, IonContent, IonHeader, IonIcon, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import { menu } from 'ionicons/icons';
-// import ExploreContainer from '.../components/ExploreContainer';
 import './dashboard.css';
 
 const Dashboard: React.FC = () => {
@@ -25,7 +24,6 @@ const Dashboard: React.FC = () => {
           <IonHeader>
               <IonToolbar>
                   <IonButtons slot="start">
-                      {/* <IonMenuButton onClick={() => toggleMenu()} /> */}
                       <IonButton onClick={() => toggleMenu()}>
                           <IonIcon icon={menu} />
                       </IonButton>

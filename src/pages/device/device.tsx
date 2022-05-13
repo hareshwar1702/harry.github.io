@@ -1,7 +1,6 @@
-import { IonAvatar, IonButton, IonButtons, IonChip, IonContent, IonHeader, IonIcon, IonItem, IonLabel, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonAvatar, IonButton, IonButtons, IonChip, IonHeader, IonIcon, IonItem, IonLabel, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import { menu } from 'ionicons/icons';
 import DeviceList from '../../components/device-list/device-list';
-// import ExploreContainer from '.../components/ExploreContainer';
 import './device.css';
 
 const Device: React.FC = () => {
@@ -35,7 +34,7 @@ const Device: React.FC = () => {
                       <IonTitle>Device List</IonTitle>
                       <IonChip class="ion-margin-start" slot='end'>
                           <IonAvatar>
-                              <img src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg" />
+                              <img src="https://ionicframework.com/docs/demos/api/avatar/avatar.svg" alt='profil-img' />
                           </IonAvatar>
                           <IonLabel>FL</IonLabel>
                       </IonChip>

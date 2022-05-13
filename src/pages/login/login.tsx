@@ -1,20 +1,23 @@
 import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCheckbox, 
 IonCol, IonContent, IonGrid, IonInput, IonItem, IonLabel, 
 IonList, IonPage, IonRippleEffect, IonRow, IonSegment, 
-IonSegmentButton, useIonLoading  } from '@ionic/react';
+IonSegmentButton, useIonLoading, useIonViewDidLeave   } from '@ionic/react';
 import './login.css';
 import { useHistory } from "react-router-dom";
 const Login: React.FC = () => {
-    const [present, dismiss] = useIonLoading();
+    const [present] = useIonLoading();
     let history = useHistory();
     const submitLogin = () => {
         present({
             message: 'Loading...',
             duration: 3000
-        })
+        })  
         history.push("/dashboard");
     }
-
+    useIonViewDidLeave(() => {
+        window.location.reload();
+        });
+        
   return (
     <IonPage>
       <IonContent fullscreen>
@@ -24,7 +27,7 @@ const Login: React.FC = () => {
                           <IonCard className='ion-margin-start ml-3 bg-transparent'>
                               <IonCardHeader>
                                   <IonCardTitle>
-                                  <img src="assets/images/iot_logo.png" className='' />
+                                  <img src="assets/images/iot_logo.png" className='' alt='profil-img' />
                                   </IonCardTitle>
                               </IonCardHeader>
                               <IonCardContent className='ion-margin-top'>
@@ -40,19 +43,14 @@ const Login: React.FC = () => {
                                       <IonItem className='ion-margin-top'>
                                           <IonLabel position="floating">Username</IonLabel>
                                           <IonInput type='text' value=''>
-                                       
                                           </IonInput>
-                                          <img src="assets/images/userIcon2.png" className='login-icon' />
+                                          <img src="assets/images/userIcon2.png" className='login-icon' alt='profil-img'/>
                                       </IonItem>
                                       <IonItem className='ion-margin-top'>
                                           <IonLabel position="floating">Password</IonLabel>
                                           <IonInput type='password'></IonInput>
-                                          <img src="assets/images/lock_1.png" className="login-icon" />
+                                          <img src="assets/images/lock_1.png" className="login-icon" alt='profil-img' />
                                       </IonItem>
-                                    {/* <IonItem>
-                                        <IonLabel position="stacked">Stacked Label</IonLabel>
-                                        <IonInput value=''> </IonInput>
-                                    </IonItem> */}
                                     <IonRow className='ion-padding ion-margin-top'>
                                         <IonCol>
                                           <IonCheckbox class="mr-2" >
@@ -77,7 +75,7 @@ const Login: React.FC = () => {
                       <IonCol sizeXl='8' sizeLg='7' sizeMd='7' sizeSm='7' sizeXs='ion-hide' className='ion-hide-md-down'>
                           <IonRow>
                               <IonCol class='ion-text-right'>
-                                  <img src="assets/images/yan_logo.png" />
+                                  <img src="assets/images/yan_logo.png" alt='profil-img' />
                               </IonCol>
                           </IonRow>
                           <IonRow>
@@ -93,3 +91,7 @@ const Login: React.FC = () => {
 };
 
 export default Login;
+// function ionViewDidEnter(arg0: () => void) {
+//     throw new Error('Function not implemented.');
+// }
+

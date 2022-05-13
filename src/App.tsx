@@ -38,7 +38,7 @@ return (
   <IonApp>
     <IonReactRouter>
       <IonSplitPane contentId="main">
-      {window.location.pathname == '/login' ? '' :  <Menu  />}
+      {window.location.pathname === '/login' ? '' :  <Menu  />}
         <IonRouterOutlet id="main">
           <Route exact path="/">
             <Redirect to="/login" />

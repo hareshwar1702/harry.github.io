@@ -1,13 +1,12 @@
 import { IonContent, IonGrid, IonRow, IonCol, IonSearchbar, IonButton, IonList, 
-    IonListHeader, IonLabel, IonItem, IonBadge, IonInput, 
-    useIonLoading, IonImg, IonAvatar, IonModal } from '@ionic/react';
+    IonListHeader, IonLabel, IonItem, IonBadge, IonInput, IonImg, IonAvatar } from '@ionic/react';
 import './user-list.css';
 import React, { useState } from 'react';
 // interface ContainerProps { }
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 
 const UserList: React.FC = () => {
-    const [present, dismiss] = useIonLoading();
+    // const [present, dismiss] = useIonLoading();
     const [isShown, setIsShown] = useState(false);
     const [isAddform, showAddform] = useState(false);
   return (
@@ -64,7 +63,7 @@ const UserList: React.FC = () => {
                       <IonCol className='add-profile ion-padding' sizeLg='5' sizeXl='4' sizeMd='6' sizeSm='6' sizeXs='12' push-xl='2'>
                           <IonItem lines='none'>
                               <IonAvatar slot="start">
-                                  <IonImg src='https://ionicframework.com/docs/demos/api/avatar/avatar.svg' />
+                                  <IonImg src='https://ionicframework.com/docs/demos/api/avatar/avatar.svg' alt='profil-img' />
                               </IonAvatar>
 
                           </IonItem>

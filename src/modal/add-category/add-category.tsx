@@ -1,9 +1,6 @@
 /* Using with useIonModal Hook */ 
-
-import React, { useState } from 'react';
-import { IonAvatar, IonButton, IonButtons, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonImg, IonInput, IonItem, IonLabel, IonList, IonPage, IonRow, IonTitle, IonToolbar, useIonModal } from '@ionic/react';
-import { render } from '@testing-library/react';
-import { closeCircleOutline, menu } from 'ionicons/icons';
+import { IonButton, IonButtons, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonInput, IonItem, IonLabel, IonList, IonRow, IonTitle, IonToolbar } from '@ionic/react';
+import { closeCircleOutline } from 'ionicons/icons';
 
 const AddCategory: React.FC<{
   count: number;

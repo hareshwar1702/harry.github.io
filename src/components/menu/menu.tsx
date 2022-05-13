@@ -62,7 +62,7 @@ import {
         <IonContent>
           <IonList id="inbox-list" className='ion-padding'>
             <IonItem lines='none'>
-            <img src="assets/images/iot_logo_black.png" className='iot-icon' />
+            <img src="assets/images/iot_logo_black.png" className='iot-icon' alt='profil-img' />
             </IonItem>
             {appPages.map((appPage, index) => {
               return (
