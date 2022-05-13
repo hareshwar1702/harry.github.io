@@ -1,10 +1,18 @@
-import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCheckbox, IonCol, IonContent, IonGrid, IonHeader, IonInput, IonItem, IonLabel, IonList, IonPage, IonRippleEffect, IonRow, IonSegment, IonSegmentButton, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButton, IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonCheckbox, 
+IonCol, IonContent, IonGrid, IonInput, IonItem, IonLabel, 
+IonList, IonPage, IonRippleEffect, IonRow, IonSegment, 
+IonSegmentButton, useIonLoading  } from '@ionic/react';
 import './login.css';
 import { useHistory } from "react-router-dom";
 const Login: React.FC = () => {
+    const [present, dismiss] = useIonLoading();
     let history = useHistory();
     const submitLogin = () => {
-     history.push("/home");
+        present({
+            message: 'Loading...',
+            duration: 3000
+        })
+        history.push("/dashboard");
     }
 
   return (

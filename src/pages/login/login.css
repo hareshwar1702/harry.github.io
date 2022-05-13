@@ -33,7 +33,7 @@
     padding: 21px 0px;
     text-align: center;
 }
-.bg-transparent ion-list, ion-item{
+.bg-transparent ion-list,.bg-transparent ion-item{
     --background:transparent;
     --background: #45464a;
     background: transparent;
